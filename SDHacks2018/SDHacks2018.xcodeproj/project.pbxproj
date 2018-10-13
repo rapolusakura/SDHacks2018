@@ -15,6 +15,7 @@
 		442B1ECE2172621000EA4CE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442B1ECC2172621000EA4CE1 /* LaunchScreen.storyboard */; };
 		442B1ED7217267AC00EA4CE1 /* CreateContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B1ED6217267AC00EA4CE1 /* CreateContractViewController.swift */; };
 		4433877D2172740B00C16449 /* ContractDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4433877C2172740B00C16449 /* ContractDetailsViewController.swift */; };
+		448D69B821727DAB0057B07E /* CarDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D69B721727DAB0057B07E /* CarDetailTableViewCell.swift */; };
 		A86040961B151EC8543D4D66 /* Pods_SDHacks2018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4965B264317BB13AF4806B94 /* Pods_SDHacks2018.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		442B1ECF2172621000EA4CE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		442B1ED6217267AC00EA4CE1 /* CreateContractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractViewController.swift; sourceTree = "<group>"; };
 		4433877C2172740B00C16449 /* ContractDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDetailsViewController.swift; sourceTree = "<group>"; };
+		448D69B721727DAB0057B07E /* CarDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailTableViewCell.swift; sourceTree = "<group>"; };
 		4965B264317BB13AF4806B94 /* Pods_SDHacks2018.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDHacks2018.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8A1934B237D59A9B8093D7 /* Pods-SDHacks2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDHacks2018.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDHacks2018/Pods-SDHacks2018.release.xcconfig"; sourceTree = "<group>"; };
 		D4335BBBA5C75A7A1BB2095E /* Pods-SDHacks2018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDHacks2018.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDHacks2018/Pods-SDHacks2018.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		442B1EBF2172620800EA4CE1 /* SDHacks2018 */ = {
 			isa = PBXGroup;
 			children = (
+				448D69B621727D8E0057B07E /* Views */,
 				442B1ED5217266F300EA4CE1 /* View Controllers */,
 				442B1EC02172620800EA4CE1 /* AppDelegate.swift */,
 				442B1EC42172620800EA4CE1 /* Main.storyboard */,
@@ -95,6 +98,14 @@
 				4433877C2172740B00C16449 /* ContractDetailsViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		448D69B621727D8E0057B07E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				448D69B721727DAB0057B07E /* CarDetailTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		44D6BB9FDAF96F3AA06610AC /* Frameworks */ = {
@@ -226,6 +237,7 @@
 				4433877D2172740B00C16449 /* ContractDetailsViewController.swift in Sources */,
 				442B1ED7217267AC00EA4CE1 /* CreateContractViewController.swift in Sources */,
 				442B1EC12172620800EA4CE1 /* AppDelegate.swift in Sources */,
+				448D69B821727DAB0057B07E /* CarDetailTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

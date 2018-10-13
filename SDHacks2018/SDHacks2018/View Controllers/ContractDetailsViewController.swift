@@ -11,7 +11,17 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class ContractDetailsViewController: UIViewController {
+class ContractDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CarDetailTableViewCell
+        cell.subjectLabel.text = "hello vi"
+        return cell
+    }
+    
     @IBOutlet weak var firstNameLabel: UILabel!
     
     @IBOutlet weak var lastNameLabel: UILabel!
