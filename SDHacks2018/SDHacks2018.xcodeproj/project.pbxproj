@@ -13,6 +13,8 @@
 		442B1EC92172620800EA4CE1 /* SDHacks2018.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 442B1EC72172620800EA4CE1 /* SDHacks2018.xcdatamodeld */; };
 		442B1ECB2172621000EA4CE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442B1ECA2172621000EA4CE1 /* Assets.xcassets */; };
 		442B1ECE2172621000EA4CE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442B1ECC2172621000EA4CE1 /* LaunchScreen.storyboard */; };
+		442B1ED7217267AC00EA4CE1 /* CreateContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442B1ED6217267AC00EA4CE1 /* CreateContractViewController.swift */; };
+		A86040961B151EC8543D4D66 /* Pods_SDHacks2018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4965B264317BB13AF4806B94 /* Pods_SDHacks2018.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		442B1ECA2172621000EA4CE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		442B1ECD2172621000EA4CE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		442B1ECF2172621000EA4CE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442B1ED6217267AC00EA4CE1 /* CreateContractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractViewController.swift; sourceTree = "<group>"; };
+		4965B264317BB13AF4806B94 /* Pods_SDHacks2018.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDHacks2018.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C8A1934B237D59A9B8093D7 /* Pods-SDHacks2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDHacks2018.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDHacks2018/Pods-SDHacks2018.release.xcconfig"; sourceTree = "<group>"; };
+		D4335BBBA5C75A7A1BB2095E /* Pods-SDHacks2018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDHacks2018.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDHacks2018/Pods-SDHacks2018.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86040961B151EC8543D4D66 /* Pods_SDHacks2018.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08384BD75CF852F81E2F17D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4335BBBA5C75A7A1BB2095E /* Pods-SDHacks2018.debug.xcconfig */,
+				7C8A1934B237D59A9B8093D7 /* Pods-SDHacks2018.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		442B1EB42172620800EA4CE1 = {
 			isa = PBXGroup;
 			children = (
 				442B1EBF2172620800EA4CE1 /* SDHacks2018 */,
 				442B1EBE2172620800EA4CE1 /* Products */,
+				08384BD75CF852F81E2F17D1 /* Pods */,
+				44D6BB9FDAF96F3AA06610AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +74,8 @@
 		442B1EBF2172620800EA4CE1 /* SDHacks2018 */ = {
 			isa = PBXGroup;
 			children = (
+				442B1ED5217266F300EA4CE1 /* View Controllers */,
 				442B1EC02172620800EA4CE1 /* AppDelegate.swift */,
-				442B1EC22172620800EA4CE1 /* ViewController.swift */,
 				442B1EC42172620800EA4CE1 /* Main.storyboard */,
 				442B1ECA2172621000EA4CE1 /* Assets.xcassets */,
 				442B1ECC2172621000EA4CE1 /* LaunchScreen.storyboard */,
@@ -67,6 +85,23 @@
 			path = SDHacks2018;
 			sourceTree = "<group>";
 		};
+		442B1ED5217266F300EA4CE1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				442B1EC22172620800EA4CE1 /* ViewController.swift */,
+				442B1ED6217267AC00EA4CE1 /* CreateContractViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		44D6BB9FDAF96F3AA06610AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4965B264317BB13AF4806B94 /* Pods_SDHacks2018.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 442B1ED22172621000EA4CE1 /* Build configuration list for PBXNativeTarget "SDHacks2018" */;
 			buildPhases = (
+				8D9DA21CE1191BB57385D088 /* [CP] Check Pods Manifest.lock */,
 				442B1EB92172620800EA4CE1 /* Sources */,
 				442B1EBA2172620800EA4CE1 /* Frameworks */,
 				442B1EBB2172620800EA4CE1 /* Resources */,
+				AC2BA7ED782513C757B7552F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +170,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8D9DA21CE1191BB57385D088 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SDHacks2018-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC2BA7ED782513C757B7552F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SDHacks2018/Pods-SDHacks2018-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDHacks2018/Pods-SDHacks2018-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		442B1EB92172620800EA4CE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +220,7 @@
 			files = (
 				442B1EC92172620800EA4CE1 /* SDHacks2018.xcdatamodeld in Sources */,
 				442B1EC32172620800EA4CE1 /* ViewController.swift in Sources */,
+				442B1ED7217267AC00EA4CE1 /* CreateContractViewController.swift in Sources */,
 				442B1EC12172620800EA4CE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +363,7 @@
 		};
 		442B1ED32172621000EA4CE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4335BBBA5C75A7A1BB2095E /* Pods-SDHacks2018.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +382,7 @@
 		};
 		442B1ED42172621000EA4CE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C8A1934B237D59A9B8093D7 /* Pods-SDHacks2018.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
