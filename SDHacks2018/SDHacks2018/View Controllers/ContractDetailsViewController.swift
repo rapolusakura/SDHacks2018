@@ -28,6 +28,16 @@ class ContractDetailsViewController: UIViewController, UITableViewDelegate, UITa
     
     @IBOutlet weak var emailLabel: UILabel!
     
+    @IBOutlet weak var craigslistUrlLabel: UITextField!
+    
+    @IBAction func getInfoButtonPressed(_ sender: Any) {
+        guard let link = craigslistUrlLabel.text else {return}
+        let apiToContact = "http://ec2-52-53-154-16.us-west-1.compute.amazonaws.com:3001/?"
+        let parameters = ["url":link]
+        Alamofire.request(apiToContact, parameters: parameters).responseJSON(options:.mutableContainers) {JSON in
+            print(JSON)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

@@ -9,14 +9,14 @@
 import Foundation
 
 struct Car {
-    var price: String
-    var model: String = nil
-    var year: Int = nil
-    var mileage: Double = nil
-    var VIN: String = nil
-    var imageURL: String = nil 
-    
-    init(price: String) {
-        self.price = price
-    }
+//    var price: String
+//    var model: String = nil
+//    var year: Int = nil
+//    var mileage: Double = nil
+//    var VIN: String = nil
+//    var imageURL: String = nil
+//
+//    init(price: String) {
+//        self.price = price
+//    }
 }
