@@ -33,8 +33,9 @@ class ContractDetailsViewController: UIViewController {
             print(response)
             if let value = response.result.value {
                 let json = JSON(value)
-                //firstNameLabel.text = json["]
-                
+                self.firstNameLabel.text = json["given_name"].stringValue
+                self.lastNameLabel.text = json["family_name"].stringValue
+                self.emailLabel.text = json["email"].stringValue
             }
         }
         
