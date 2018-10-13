@@ -25,7 +25,8 @@ class CreateContractViewController: UIViewController {
     @IBOutlet weak var createContractButton: UIButton!
     
     @IBAction func createContractButtonPressed(_ sender: Any) {
-        print("create contract button pressed") 
+        print("create contract button pressed")
+        self.performSegue(withIdentifier: "showContractDetails", sender: self)
     }
 }
 
